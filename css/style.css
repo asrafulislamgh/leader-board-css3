@@ -14,19 +14,65 @@ body {
   background-color: #f3f1ff;
   font-weight: 500;
 }
+a {
+  text-decoration: none;
+}
 /* generic css */
 
+/* header section */
+header,
+footer {
+  background-color: #562eff;
+  height: 94px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-elements {
+  width: 870px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+}
+.navbar ul li {
+  list-style: none;
+}
+.navbar ul li:hover a {
+  color: white;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 40px;
+  padding: 30px 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.fa-lightbulb {
+  color: white;
+  font-size: 45px;
+}
+.logo h2 {
+  font-size: 24px;
+  color: white;
+  margin-left: 16px;
+}
 /* top players */
 main {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.container {
+.container,
+.container-courses {
   background-color: #fff;
   width: 870px;
   padding: 30px;
-  margin-top: 20px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -91,6 +137,9 @@ hr {
 /* =============================
             latest courses
 ============================= */
+.container-courses {
+  margin-top: 20px;
+}
 .all-courses {
   display: flex;
   justify-content: space-between;
@@ -149,4 +198,8 @@ hr {
 }
 .duration i {
   margin-left: 12px;
+}
+/* footer style */
+footer p {
+  color: white;
 }
